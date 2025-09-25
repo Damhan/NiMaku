@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "NiMaku",
+  "version": "1.0",
+
+  "description": "Allows you to watch videos on Netflix with your native Language and Japanese subtitles.",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "*://www.netflix.com/*",
+    "*://www.netflix.ca/*",
+    "*://www.netflix.co.uk/*",
+    "*://www.netflix.de/*",
+    "*://www.netflix.fr/*",
+    "*://www.netflix.it/*",
+    "*://www.netflix.es/*",
+    "*://www.netflix.com.br/*",
+    "*://www.netflix.com.au/*",
+    "*://www.netflix.co.jp/*",
+    "*://*.nflxvideo.net/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.netflix.com/watch/*",
+        "*://www.netflix.ca/watch/*",
+        "*://www.netflix.co.uk/watch/*",
+        "*://www.netflix.de/watch/*",
+        "*://www.netflix.fr/watch/*",
+        "*://www.netflix.it/watch/*",
+        "*://www.netflix.es/watch/*",
+        "*://www.netflix.com.br/watch/*",
+        "*://www.netflix.com.au/watch/*",
+        "*://www.netflix.co.jp/watch/*"
+      ],
+      "js": ["nimaku.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
