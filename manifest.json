@@ -3,7 +3,7 @@
   "name": "NiMaku",
   "version": "1.0",
 
-  "description": "Allows you to watch videos on Netflix with your native Language and Japanese subtitles.",
+  "description": "Allows you to watch videos on Netflix with your native Language and Japanese dual subtitles.",
   "permissions": [
     "webRequest",
     "storage",
